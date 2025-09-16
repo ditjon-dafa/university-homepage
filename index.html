@@ -13,7 +13,7 @@
   <body>
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid justify-content-end">
-        <ul class="navbar-nav bg-light p-3">
+        <ul class="navbar-nav bg-light p-3 me-2">
           <li class="nav-item">
             <a
               class="nav-link"
@@ -69,8 +69,75 @@
             <button class="btn btn-danger" type="submit">Cerca</button>
           </form>
         </ul>
+        <button
+          type="button"
+          class="btn btn-danger no-border-radius p-4"
+          data-bs-toggle="modal"
+          data-bs-target="#accediA"
+        >
+          Accedi a...
+        </button>
       </div>
     </nav>
+    <div class="modal" id="accediA" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="bg-danger d-flex justify-content-end">
+            <button
+              type="button"
+              class="text-white bg-danger border-0 fs-4"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              X
+            </button>
+          </div>
+          <div class="modal-body bg-danger">
+            <h1 class="fs-4 text-center text-white">ACCEDI A...</h1>
+            <hr class="border-bottom border-white" />
+          </div>
+
+          <div class="modal-footer">
+            <div class="container">
+              <div class="row p-2">
+                <div class="col-sm-6 nav-bar-modal-links">
+                  <a href="https://s3w.si.unimib.it/"> Segreterie online</a>
+                </div>
+                <div class="col-sm-6 nav-bar-modal-links">
+                  <a href="https://unimibit.sharepoint.com/sites/MyUniMiB">
+                    MyUniMiB-staff</a
+                  >
+                </div>
+              </div>
+
+              <div class="row p-2">
+                <div class="col-sm-6 nav-bar-modal-links">
+                  <a href="http://elearning.unimib.it/"> e-learning </a>
+                </div>
+                <div class="col-sm-6 nav-bar-modal-links">
+                  <a href="https://area-redazionale.unimib.it/">
+                    Modifica scheda rubrica
+                  </a>
+                </div>
+              </div>
+
+              <div class="row p-2">
+                <div class="col-sm-6 nav-bar-modal-links">
+                  <a
+                    href="http://gestioneorari.didattica.unimib.it/PortaleStudentiUnimib/"
+                  >
+                    Calendario lezioni/esami
+                  </a>
+                </div>
+                <div class="col-sm-6 nav-bar-modal-links">
+                  <a href="https://mail.google.com/a/unimib.it"> Webmail </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
   </body>

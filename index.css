@@ -1,3 +1,15 @@
 .nav-link:hover {
   text-decoration: underline;
 }
+
+.no-border-radius {
+  border-radius: 0;
+}
+
+.nav-bar-modal-links {
+  text-decoration: underline;
+}
+
+.nav-bar-modal-links a {
+  color: black;
+}
