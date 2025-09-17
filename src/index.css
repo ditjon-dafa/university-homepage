@@ -21,6 +21,9 @@
   #navbar-modal-button {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 575px) {
   .nav-bar-modal-links {
     text-align: center;
   }
