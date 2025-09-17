@@ -13,3 +13,15 @@
 .nav-bar-modal-links a {
   color: black;
 }
+
+@media screen and (max-width: 1400px) {
+  .navbar-nav {
+    display: none;
+  }
+  #navbar-modal-button {
+    width: 100%;
+  }
+  .nav-bar-modal-links {
+    text-align: center;
+  }
+}
