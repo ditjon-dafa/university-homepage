@@ -15,16 +15,52 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .navbar-nav {
+  #first-nav-bar {
     display: none;
   }
+
+  #second-nav-bar {
+    display: none;
+  }
+
   #navbar-modal-button {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #toggle-menu-md,
+  #toggle-menu-xs {
+    display: none;
+  }
+
+  #toggle-menu-lg {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #toggle-menu-lg,
+  #toggle-menu-xs {
+    display: none;
+  }
+
+  #toggle-menu-md {
+    display: block;
   }
 }
 
 @media screen and (max-width: 575px) {
   .nav-bar-modal-links {
     text-align: center;
+  }
+
+  #toggle-menu-lg,
+  #toggle-menu-md {
+    display: none;
+  }
+
+  #toggle-menu-xs {
+    display: block;
   }
 }

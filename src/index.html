@@ -18,7 +18,11 @@
   <body>
     <nav class="navbar navbar-expand-xxl">
       <div class="container-fluid justify-content-end">
-        <ul class="navbar-nav bg-light p-3 me-2">
+        <ul
+          class="navbar-nav p-3 me-2"
+          id="first-nav-bar"
+          style="background-color: rgb(200, 200, 200)"
+        >
           <li class="nav-item">
             <a
               class="nav-link"
@@ -157,54 +161,111 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-xxl">
-      <div class="container-fluid justify-content-end">
-        <ul class="navbar-nav p-3 me-2 fs-5" style="font-weight: bold">
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="https://www.unimib.it/ateneo"
-              >ATENEO
-            </a>
-          </li>
-          <li class="text-danger p-2">|</li>
-          <li class="nav-item">
-            <a
-              class="nav-link text-danger"
-              href="https://www.unimib.it/studiare"
-              >STUDIARE
-            </a>
-          </li>
+    <!-- <div class="d-flex justify-content-end"> -->
+    <div class="container-fluid justify-content-end">
+      <nav class="navbar d-flex flex-row">
+        <div
+          class="container-fluid justify-content-end p-3 me-2 fs-5"
+          id="second-nav-bar"
+          style="font-weight: bold"
+        >
+          <a class="nav-link text-danger" href="https://www.unimib.it/ateneo"
+            >ATENEO
+          </a>
 
-          <li class="text-danger p-2">|</li>
+          <span class="text-danger p-2"> | </span>
 
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="https://www.unimib.it/ricerca"
-              >RICERCA
-            </a>
-          </li>
-          <li class="text-danger p-2">|</li>
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="https://www.unimib.it/impresa"
-              >IMPRESA
-            </a>
-          </li>
-          <li class="text-danger p-2">|</li>
-          <li class="nav-item me-1">
-            <a class="nav-link text-danger" href="https://www.unimib.it/societa"
-              >SOCIETÀ
-            </a>
-          </li>
-          <li>
-            <button class="bg-white border border-0 p-1">
-              <i
-                class="bi bi-list"
-                style="color: rgb(210, 30, 30); font-size: 1.3em"
-              >
-              </i>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          <a class="nav-link text-danger" href="https://www.unimib.it/studiare"
+            >STUDIARE
+          </a>
+
+          <!-- <ul
+          class="navbar-nav p-3 me-2 fs-5"
+          id="second-nav-bar"
+          style="font-weight: bold"
+        > -->
+          <span class="text-danger p-2"> | </span>
+          <!-- <li class="text-danger p-2">|</li> -->
+
+          <!-- <li class="nav-item"> -->
+          <a class="nav-link text-danger" href="https://www.unimib.it/ricerca"
+            >RICERCA
+          </a>
+          <!-- </li> -->
+          <span class="text-danger p-2"> | </span>
+          <!-- <li class="text-danger p-2">|</li> -->
+          <!-- <li class="nav-item"> -->
+          <a class="nav-link text-danger" href="https://www.unimib.it/impresa"
+            >IMPRESA
+          </a>
+          <!-- </li> -->
+          <span class="text-danger p-2"> | </span>
+          <!-- <li class="text-danger p-2">|</li> -->
+          <!-- <li class="nav-item me-1"> -->
+          <a class="nav-link text-danger" href="https://www.unimib.it/societa"
+            >SOCIETÀ
+          </a>
+          <!-- </li> -->
+          <!-- </ul> -->
+        </div>
+        <div>
+          <button
+            class="navbar-toggler bg-white border border-0 p-1"
+            id="toggle-menu-lg"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggle-menu-lg-display"
+            aria-controls="toggle-menu-lg-display"
+            aria-expanded="false"
+            aria-label="Toggle menu large"
+          >
+            <i
+              class="bi bi-list"
+              style="color: rgb(210, 30, 30); font-size: 1.3em"
+            >
+            </i>
+          </button>
+
+          <button
+            class="navbar-toggler bg-white border border-0 p-1"
+            id="toggle-menu-md"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggle-menu-md-display"
+            aria-controls="toggle-menu-md-display"
+            aria-expanded="false"
+            aria-label="Toggle menu medium"
+          >
+            <i
+              class="bi bi-list"
+              style="color: rgb(210, 30, 30); font-size: 1.3em"
+            >
+            </i>
+          </button>
+
+          <button
+            class="navbar-toggler bg-white border border-0 p-1"
+            id="toggle-menu-xs"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggle-menu-xs-display"
+            aria-controls="toggle-menu-xs-display"
+            aria-expanded="false"
+            aria-label="Toggle menu xs"
+          >
+            <i
+              class="bi bi-list"
+              style="color: rgb(210, 30, 30); font-size: 1.3em"
+            >
+            </i>
+          </button>
+        </div>
+        <!-- </div> -->
+      </nav>
+    </div>
+    <div
+      class="container-fluid p-0 collapse navbar-collapse"
+      id="toggle-menu-xs-display"
+    >
+      <p>Prova</p>
+    </div>
 
     <div class="container-fluid p-0">
       <ul class="nav nav-pills nav-fill" style="font-weight: bold">
