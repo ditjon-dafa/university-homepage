@@ -1,4 +1,5 @@
-.nav-link:hover {
+.nav-link:hover,
+.menu-links:hover {
   text-decoration: underline;
 }
 
@@ -14,12 +15,28 @@
   color: black;
 }
 
-@media screen and (max-width: 1400px) {
-  #first-nav-bar {
-    display: none;
-  }
+.menu-pills,
+.nav-bar-pills,
+#second-nav-bar {
+  font-weight: bold;
+}
 
-  #second-nav-bar {
+.menu-links {
+  text-decoration: none;
+}
+
+.menu-links-header {
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  #first-nav-bar,
+  #second-nav-bar,
+  #toggle-menu-lg-display {
     display: none;
   }
 
