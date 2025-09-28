@@ -19,7 +19,8 @@
   text-decoration: underline;
 }
 
-.nav-bar-modal-links a {
+.nav-bar-modal-links a,
+.menu-links {
   color: black;
 }
 
