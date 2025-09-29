@@ -26,7 +26,7 @@
 
 .menu-pills,
 .nav-bar-pills,
-#second-nav-bar {
+#second-nav-bar-lg {
   font-weight: bold;
 }
 
@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 1400px) {
   #first-nav-bar,
-  #second-nav-bar {
+  #second-nav-bar-lg {
     display: none;
   }
 
@@ -52,7 +52,8 @@
 /* menu display xxl */
 @media screen and (min-width: 1400px) {
   #menu-medium-display,
-  #menu-small-display {
+  #menu-small-display,
+  #second-nav-bar-md {
     display: none;
   }
 
@@ -68,7 +69,8 @@
     display: none;
   }
 
-  #menu-medium-display {
+  #menu-medium-display,
+  #second-nav-bar-md {
     display: block;
   }
 }
@@ -80,7 +82,8 @@
   }
 
   #menu-large-display,
-  #menu-medium-display {
+  #menu-medium-display,
+  #second-nav-bar-md {
     display: none;
   }
 

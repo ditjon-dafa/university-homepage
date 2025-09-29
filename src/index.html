@@ -132,9 +132,15 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-xxl">
-      <div class="container-fluid d-flex justify-content-end pt-3 fs-5">
-        <div class="navbar-nav" id="second-nav-bar">
+    <div class="container-fluid d-flex justify-content-end pt-3 fs-5">
+      <div id="second-nav-bar-md">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" />
+          <button class="btn btn-danger me-2" type="submit">Cerca</button>
+        </form>
+      </div>
+      <nav class="navbar navbar-expand-xxl">
+        <div class="navbar-nav" id="second-nav-bar-lg">
           <a class="nav-link text-danger" href="#">ATENEO </a>
 
           <span class="text-danger p-2"> | </span>
@@ -153,25 +159,25 @@
 
           <a class="nav-link text-danger" href="#">SOCIETÀ </a>
         </div>
-        <div class="bg-white">
-          <button
-            class="navbar-toggler border border-0 p-1"
-            id="toggle-menu"
-            data-bs-toggle="collapse"
-            data-bs-target="#toggle-menu-display"
-            aria-controls="toggle-menu-display"
-            aria-expanded="false"
-            aria-label="Toggle menu"
+      </nav>
+      <div class="bg-white">
+        <button
+          class="navbar-toggler border border-0 pt-3"
+          id="toggle-menu"
+          data-bs-toggle="collapse"
+          data-bs-target="#toggle-menu-display"
+          aria-controls="toggle-menu-display"
+          aria-expanded="false"
+          aria-label="Toggle menu"
+        >
+          <i
+            class="bi bi-list"
+            style="color: rgb(210, 30, 30); font-size: 1.3em"
           >
-            <i
-              class="bi bi-list"
-              style="color: rgb(210, 30, 30); font-size: 1.3em"
-            >
-            </i>
-          </button>
-        </div>
+          </i>
+        </button>
       </div>
-    </nav>
+    </div>
 
     <div
       class="container pt-3 collapse navbar-collapse"
@@ -186,6 +192,7 @@
       </div>
       <div class="container-md" id="menu-medium-display">
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+          <hr class="border-bottom border-danger" />
           <a href="#" class="text-danger fs-5 menu-links menu-links-header">
             ATENEO</a
           >

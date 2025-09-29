@@ -1,17 +1,18 @@
-let isShownSecondNavBar = true;
+let isShownMenuContent = false;
 
 const TOGGLE_MENU = document.getElementById("toggle-menu");
 TOGGLE_MENU.addEventListener("click", toggleSecondNavBar);
 
 function toggleSecondNavBar() {
-  isShownSecondNavBar = !isShownSecondNavBar;
+  isShownMenuContent = !isShownMenuContent;
   showHideSecondNavBar();
 }
 
 function showHideSecondNavBar() {
-  const SECOND_NAV_BAR_CONTAINER = document.getElementById("second-nav-bar");
+  const SECOND_NAV_BAR_CONTAINER = document.getElementById("second-nav-bar-lg");
+
   SECOND_NAV_BAR_CONTAINER.classList.toggle(
     "hide",
-    isShownSecondNavBar === false
+    isShownMenuContent === true
   );
 }
