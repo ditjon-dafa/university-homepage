@@ -1,9 +1,11 @@
 .nav-link:hover,
-.menu-links:hover {
+.menu-links:hover,
+.menu-links-header:hover {
   text-decoration: underline;
 }
 
-.menu-links {
+.menu-links,
+.menu-links-header {
   text-decoration: none;
 }
 
