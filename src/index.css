@@ -55,7 +55,8 @@
 @media screen and (min-width: 1400px) {
   #menu-medium-display,
   #menu-small-display,
-  #second-nav-bar-md {
+  #second-nav-bar-md,
+  #second-nav-bar-sm {
     display: none;
   }
 
@@ -67,7 +68,8 @@
 /*menu display md */
 @media screen and (max-width: 1399px) {
   #menu-small-display,
-  #menu-large-display {
+  #menu-large-display,
+  #second-nav-bar-sm {
     display: none;
   }
 
@@ -89,7 +91,8 @@
     display: none;
   }
 
-  #menu-small-display {
+  #menu-small-display,
+  #second-nav-bar-sm {
     display: block;
   }
 }
