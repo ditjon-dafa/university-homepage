@@ -1,6 +1,7 @@
 .nav-link:hover,
 .menu-links:hover,
-.menu-links-header:hover {
+.menu-links-header:hover,
+.carousel-links:hover {
   text-decoration: underline;
 }
 
@@ -40,13 +41,11 @@
   display: block;
 }
 
-/* .grid-columns {
-  display: grid;
-  grid-template-columns: 2fr 8fr 2fr;
-  place-items: center;
-  gap: 1.5em;
-  padding: 1.5em;
-} */
+@media screen and (max-width: 900px) {
+  #main-nav-pills {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1400px) {
   #first-nav-bar,
