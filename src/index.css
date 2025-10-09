@@ -41,6 +41,9 @@
   display: block;
 }
 
+#aree-disciplinari {
+  font-size: 1.3em;
+}
 @media screen and (max-width: 900px) {
   #main-nav-pills {
     display: none;
@@ -105,5 +108,8 @@
   #menu-small-display,
   #second-nav-bar-md {
     display: block;
+  }
+  .carousel-item {
+    height: 54vh;
   }
 }
