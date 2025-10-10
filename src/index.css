@@ -1,12 +1,14 @@
 .nav-link:hover,
 .menu-links:hover,
 .menu-links-header:hover,
-.carousel-links:hover {
+.carousel-links:hover,
+.aree-disciplinari-links:hover {
   text-decoration: underline;
 }
 
 .menu-links,
-.menu-links-header {
+.menu-links-header,
+.aree-disciplinari-links {
   text-decoration: none;
 }
 
@@ -23,7 +25,8 @@
 }
 
 .nav-bar-modal-links a,
-.menu-links {
+.menu-links,
+.aree-disciplinari-links {
   color: black;
 }
 
@@ -41,12 +44,52 @@
   display: block;
 }
 
+.logo {
+  font-size: 2em;
+}
+
 #aree-disciplinari {
   font-size: 1.3em;
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 950px) {
   #main-nav-pills {
     display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #aree-disciplinari-title {
+    text-indent: 1.3em;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .carousel-item {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .carousel-item {
+    height: 75vh;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .carousel-item {
+    height: 62vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-item {
+    height: 57vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-item {
+    height: 53vh;
   }
 }
 
@@ -59,10 +102,6 @@
   #navbar-modal-button {
     width: 100%;
   }
-}
-
-.logo {
-  font-size: 2em;
 }
 
 /* menu display xxl */
@@ -108,8 +147,5 @@
   #menu-small-display,
   #second-nav-bar-md {
     display: block;
-  }
-  .carousel-item {
-    height: 54vh;
   }
 }
