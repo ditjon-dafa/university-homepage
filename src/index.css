@@ -64,32 +64,34 @@
   }
 }
 
-@media screen and (max-width: 1399px) {
-  .carousel-item {
-    height: 80vh;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .carousel-item {
-    height: 75vh;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .carousel-item {
-    height: 62vh;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .carousel-item {
-    height: 57vh;
+    height: 46vh;
+  }
+  .caption-small-display {
+    margin: 0 10vw;
   }
 }
+
+@media screen and (max-width: 667px) {
+  .carousel-item {
+    height: 44vh;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .carousel-item {
-    height: 53vh;
+    height: 40vh;
+  }
+
+  .caption-small-display {
+    margin: 0 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .carousel-item {
+    height: 45vh;
   }
 }
 
