@@ -64,6 +64,24 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .caption-large-display {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .caption-large-display {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .caption-large-display {
+    width: 80%;
+    padding-top: 1em;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .carousel-item {
     height: 46vh;
