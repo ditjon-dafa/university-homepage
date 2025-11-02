@@ -52,6 +52,14 @@
   font-size: 1.3em;
 }
 
+#toggle-menu-display {
+  position: relative;
+}
+
+#universityCarousel {
+  z-index: 0;
+}
+
 @media screen and (max-width: 950px) {
   #main-nav-pills {
     display: none;
@@ -84,22 +92,16 @@
 
 @media screen and (max-width: 767px) {
   .carousel-item {
-    height: 46vh;
+    height: 52vh;
   }
   .caption-small-display {
     margin: 0 10vw;
   }
 }
 
-@media screen and (max-width: 667px) {
-  .carousel-item {
-    height: 44vh;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .carousel-item {
-    height: 40vh;
+    height: 45vh;
   }
 
   .caption-small-display {
@@ -109,7 +111,7 @@
 
 @media screen and (max-width: 360px) {
   .carousel-item {
-    height: 45vh;
+    height: 43vh;
   }
 }
 
@@ -133,8 +135,11 @@
   }
 
   #menu-large-display {
-    display: block;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
   }
+
   .logo {
     margin-left: 3em;
   }
@@ -150,6 +155,12 @@
   #menu-medium-display,
   #second-nav-bar-md {
     display: block;
+  }
+
+  #menu-medium-display {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
   }
 }
 
