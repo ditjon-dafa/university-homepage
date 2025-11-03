@@ -2,13 +2,15 @@
 .menu-links:hover,
 .menu-links-header:hover,
 .carousel-links:hover,
-.aree-disciplinari-links:hover {
+.aree-disciplinari-links:hover,
+.news-links:hover {
   text-decoration: underline;
 }
 
 .menu-links,
 .menu-links-header,
-.aree-disciplinari-links {
+.aree-disciplinari-links,
+.news-links {
   text-decoration: none;
 }
 

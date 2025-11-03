@@ -10,13 +10,12 @@ TOGGLE_MENU.addEventListener("click", toggleMenu);
 function initialUpdate() {
   firstDocumentBodyWidth = screen.availWidth;
   previousWindowWidth = firstDocumentBodyWidth;
-  currentWindowWidth = 0;
   updateSize();
 }
 
 function toggleMenu() {
   isShownMenuContent = !isShownMenuContent;
-  updateSize();
+  updateSize(); //to hide general page content when menu content is shown at the small screen
   showHideMenuContent();
 }
 
@@ -36,17 +35,24 @@ function updateSize() {
   const UNIVERSITY_CONTENT_SMALL_SCREEN = document.querySelectorAll(
     ".university-content-small-screen"
   );
+
+  //hide page general content when menu content is shown in small screen
   if (currentWindowWidth <= 767) {
     UNIVERSITY_CONTENT_SMALL_SCREEN.forEach((content) => {
       content.classList.toggle("hide", isShownMenuContent === true);
     });
-  } else {
+  }
+  //or show menu content overlaying page content in medium and large screen
+  else {
     UNIVERSITY_CONTENT_SMALL_SCREEN.forEach((content) => {
       if (isShownMenuContent === true && content.classList.contains("hide"))
         content.classList.remove("hide");
     });
   }
+  //hide large screen menu content when browser maximize button is clicked
+  //then show second nav bar
   if (
+    isShownMenuContent === true &&
     previousWindowWidth < firstDocumentBodyWidth &&
     currentWindowWidth === firstDocumentBodyWidth
   ) {
