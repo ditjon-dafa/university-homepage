@@ -3,14 +3,16 @@
 .menu-links-header:hover,
 .carousel-links:hover,
 .aree-disciplinari-links:hover,
-.news-links:hover {
+.news-links:hover,
+.eventi-links:hover {
   text-decoration: underline;
 }
 
 .menu-links,
 .menu-links-header,
 .aree-disciplinari-links,
-.news-links {
+.news-links,
+.eventi-links {
   text-decoration: none;
 }
 
@@ -60,6 +62,21 @@
 
 #universityCarousel {
   z-index: 0;
+}
+
+.card {
+  height: 100%;
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 20px rgb(205, 205, 205);
+  z-index: 1;
+}
+
+.time {
+  background-color: rgb(200, 200, 200);
 }
 
 @media screen and (max-width: 950px) {
