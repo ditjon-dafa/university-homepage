@@ -79,6 +79,10 @@
   background-color: rgb(200, 200, 200);
 }
 
+#footer-first-nav-bar {
+  text-align: right;
+}
+
 @media screen and (max-width: 950px) {
   #main-nav-pills {
     display: none;
@@ -197,5 +201,9 @@
   #menu-small-display,
   #second-nav-bar-md {
     display: block;
+  }
+
+  #footer-first-nav-bar {
+    text-align: left;
   }
 }
