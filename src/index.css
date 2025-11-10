@@ -4,7 +4,8 @@
 .carousel-links:hover,
 .aree-disciplinari-links:hover,
 .news-links:hover,
-.eventi-links:hover {
+.eventi-links:hover,
+.footer-links:hover {
   text-decoration: underline;
 }
 
@@ -12,7 +13,8 @@
 .menu-links-header,
 .aree-disciplinari-links,
 .news-links,
-.eventi-links {
+.eventi-links,
+.footer-links {
   text-decoration: none;
 }
 
@@ -30,7 +32,8 @@
 
 .nav-bar-modal-links a,
 .menu-links,
-.aree-disciplinari-links {
+.aree-disciplinari-links,
+.footer-links {
   color: black;
 }
 
@@ -48,7 +51,8 @@
   display: block;
 }
 
-.logo {
+#logo,
+#logo-footer {
   font-size: 2em;
 }
 
@@ -77,10 +81,6 @@
 
 .time {
   background-color: rgb(200, 200, 200);
-}
-
-#footer-first-nav-bar {
-  text-align: right;
 }
 
 @media screen and (max-width: 950px) {
@@ -121,20 +121,23 @@
     margin: 0 10vw;
   }
 }
-
 @media screen and (max-width: 576px) {
   .carousel-item {
-    height: 45vh;
+    height: 46vh;
   }
-
   .caption-small-display {
     margin: 0 0;
   }
 }
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
   .carousel-item {
-    height: 43vh;
+    height: 42vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .carousel-item {
+    height: 44vh;
   }
 }
 
@@ -163,7 +166,7 @@
     z-index: 1;
   }
 
-  .logo {
+  #logo {
     margin-left: 3em;
   }
 }
@@ -201,9 +204,5 @@
   #menu-small-display,
   #second-nav-bar-md {
     display: block;
-  }
-
-  #footer-first-nav-bar {
-    text-align: left;
   }
 }

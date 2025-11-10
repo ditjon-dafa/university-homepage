@@ -136,7 +136,7 @@
 
       <div class="container-fluid d-flex justify-content-between fs-5">
         <div class="me-1 pt-1">
-          <i class="bi bi-book logo" style="color: rgb(210, 30, 30)"></i>
+          <i class="bi bi-book" id="logo" style="color: rgb(210, 30, 30)"></i>
         </div>
         <div class="d-flex justify-content-end">
           <div id="second-nav-bar-md">
@@ -1011,7 +1011,7 @@
       </div>
 
       <div
-        class="container-fluid mt-5 university-content-small-screen"
+        class="container-fluid mt-5 py-5 university-content-small-screen"
         style="background-color: rgb(235, 235, 235)"
       >
         <div class="container">
@@ -1020,7 +1020,8 @@
               <div class="d-flex">
                 <div class="flex-shrink-0 fs-5">
                   <i
-                    class="bi bi-book logo"
+                    class="bi bi-book"
+                    id="logo-footer"
                     style="color: rgb(210, 30, 30)"
                   ></i>
                 </div>
@@ -1034,22 +1035,94 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-12">
-                  <p>
-                    Note legali | Privacy | Protezione dei Dati Personali |
-                    Amministrazione trasparente | Dichiarazione di accesibilità
-                    | Mappa del sito | Rivedi le tue scelte sui cookie |
-                    Statistiche | Privacy e cookie policy
-                  </p>
+              <div
+                class="d-flex flex-wrap"
+                style="font-weight: 600; font-size: smaller"
+              >
+                <div><a href="#" class="footer-links"> Note legali </a></div>
+                <div class="px-2">|</div>
+                <div><a href="#" class="footer-links"> Privacy </a></div>
+                <div class="px-2">|</div>
+                <div>
+                  <a href="#" class="footer-links">
+                    Protezione dei Dati Personali</a
+                  >
+                </div>
+                <div class="px-2">|</div>
+                <div>
+                  <a href="#" class="footer-links">
+                    Amministrazione trasparente</a
+                  >
+                </div>
+                <div class="px-2">|</div>
+                <div>
+                  <a href="#" class="footer-links">
+                    Dichiarazione di accesibilità</a
+                  >
+                </div>
+                <div class="px-2">|</div>
+                <div>
+                  <a href="#" class="footer-links"> Mappa del sito</a>
+                </div>
+                <div class="px-2">|</div>
+                <div>
+                  <a href="#" class="footer-links">
+                    Rivedi le tue scelte sui cookie</a
+                  >
+                </div>
+                <div class="px-2">|</div>
+                <div>
+                  <a href="#" class="footer-links"> Statistiche </a>
+                </div>
+                <div class="px-2">|</div>
+                <div>
+                  <a href="#" class="footer-links"> Privacy e cookie policy </a>
                 </div>
               </div>
             </div>
+
             <div class="col-12 col-md-6">
-              <p id="footer-first-nav-bar">
-                DIPARTIMENTI COMUNICAZIONE BIBLIOTECA DOVE SIAMO LAVORA CON NOI
-                RUBRICA ENG ACCEDI A...
-              </p>
+              <div
+                class="d-flex justify-content-start justify-content-md-end flex-wrap mt-3"
+                style="font-size: smaller; font-weight: bold"
+              >
+                <div class="pe-2">
+                  <a href="#" class="footer-links text-danger">
+                    DIPARTIMENTI
+                  </a>
+                </div>
+                <div class="pe-2">
+                  <a href="#" class="footer-links text-danger">
+                    COMUNICAZIONE
+                  </a>
+                </div>
+                <div class="pe-2">
+                  <a href="#" class="footer-links text-danger"> BIBLIOTECA</a>
+                </div>
+                <div class="pe-2">
+                  <a href="#" class="footer-links text-danger">DOVE SIAMO </a>
+                </div>
+                <div class="pe-2">
+                  <a href="#" class="footer-links text-danger">
+                    LAVORA CON NOI</a
+                  >
+                </div>
+                <div class="pe-2">
+                  <a href="#" class="footer-links text-danger"> RUBRICA </a>
+                </div>
+                <div class="pe-2">
+                  <a href="#" class="footer-links text-danger"> ENG </a>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="footer-links text-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#accediA"
+                    >ACCEDI A...
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
