@@ -16,59 +16,121 @@
     <link href="./index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-xxl">
-        <div class="container-fluid d-flex justify-content-end">
-          <ul
-            class="navbar-nav p-3 me-2"
-            id="first-nav-bar"
-            style="background-color: rgb(200, 200, 200)"
-          >
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dipartimenti </a>
-            </li>
-            <li class="p-2">|</li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comunicazione</a>
-            </li>
-            <li class="p-2">|</li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Biblioteca</a>
-            </li>
-            <li class="p-2">|</li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dove siamo</a>
-            </li>
-            <li class="p-2">|</li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Lavora con noi</a>
-            </li>
-            <li class="p-2">|</li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rubrica</a>
-            </li>
-            <li class="p-2">|</li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ENG</a>
-            </li>
-            <li class="p-2">|</li>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" />
-              <button class="btn btn-danger" type="submit">Cerca</button>
-            </form>
-          </ul>
+    <div class="container-fluid" id="body-content">
+      <header>
+        <nav class="navbar navbar-expand-xxl">
+          <div class="container-fluid d-flex justify-content-end">
+            <ul
+              class="navbar-nav p-3 me-2"
+              id="first-nav-bar"
+              style="background-color: rgb(200, 200, 200)"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dipartimenti </a>
+              </li>
+              <li class="p-2">|</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comunicazione</a>
+              </li>
+              <li class="p-2">|</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Biblioteca</a>
+              </li>
+              <li class="p-2">|</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dove siamo</a>
+              </li>
+              <li class="p-2">|</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lavora con noi</a>
+              </li>
+              <li class="p-2">|</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rubrica</a>
+              </li>
+              <li class="p-2">|</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ENG</a>
+              </li>
+              <li class="p-2">|</li>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" />
+                <button class="btn btn-danger" type="submit">Cerca</button>
+              </form>
+            </ul>
 
-          <button
-            type="button"
-            class="btn btn-danger no-border-radius p-4"
-            data-bs-toggle="modal"
-            data-bs-target="#accediA"
-            id="navbar-modal-button"
-          >
-            Accedi a...
-          </button>
+            <button
+              type="button"
+              class="btn btn-danger no-border-radius p-4 header-small-screen"
+              data-bs-toggle="modal"
+              data-bs-target="#accediA"
+              id="navbar-modal-button"
+            >
+              Accedi a...
+            </button>
+          </div>
+        </nav>
+
+        <div class="container-fluid d-flex justify-content-between fs-5">
+          <div class="me-1 pt-1 header-small-screen">
+            <i class="bi bi-book" id="logo" style="color: rgb(210, 30, 30)"></i>
+          </div>
+          <div class="d-flex justify-content-end">
+            <div id="second-nav-bar-md">
+              <form class="d-flex pt-3" role="search">
+                <input
+                  class="form-control me-1 header-small-screen"
+                  type="search"
+                />
+                <button
+                  class="btn btn-danger me-1 header-small-screen"
+                  type="submit"
+                >
+                  Cerca
+                </button>
+              </form>
+            </div>
+            <nav class="navbar navbar-expand-xxl">
+              <div class="navbar-nav" id="second-nav-bar-lg">
+                <a class="nav-link text-danger" href="#">ATENEO </a>
+
+                <span class="text-danger p-2"> | </span>
+
+                <a class="nav-link text-danger" href="#">STUDIARE </a>
+
+                <span class="text-danger p-2"> | </span>
+
+                <a class="nav-link text-danger" href="#">RICERCA </a>
+
+                <span class="text-danger p-2"> | </span>
+
+                <a class="nav-link text-danger" href="#">IMPRESA </a>
+
+                <span class="text-danger p-2"> | </span>
+
+                <a class="nav-link text-danger" href="#">SOCIETÀ </a>
+              </div>
+            </nav>
+            <div class="bg-white pt-3 header-small-screen">
+              <button
+                class="navbar-toggler border border-0"
+                id="toggle-menu"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggle-menu-display"
+                aria-controls="toggle-menu-display"
+                aria-expanded="false"
+                aria-label="Toggle menu"
+              >
+                <i
+                  class="bi bi-list"
+                  style="color: rgb(210, 30, 30); font-size: 1.3em"
+                >
+                </i>
+              </button>
+            </div>
+          </div>
         </div>
-      </nav>
+      </header>
 
       <div class="modal" id="accediA" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -130,58 +192,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid d-flex justify-content-between fs-5">
-        <div class="me-1 pt-1">
-          <i class="bi bi-book" id="logo" style="color: rgb(210, 30, 30)"></i>
-        </div>
-        <div class="d-flex justify-content-end">
-          <div id="second-nav-bar-md">
-            <form class="d-flex pt-3" role="search">
-              <input class="form-control me-1" type="search" />
-              <button class="btn btn-danger me-1" type="submit">Cerca</button>
-            </form>
-          </div>
-          <nav class="navbar navbar-expand-xxl">
-            <div class="navbar-nav" id="second-nav-bar-lg">
-              <a class="nav-link text-danger" href="#">ATENEO </a>
-
-              <span class="text-danger p-2"> | </span>
-
-              <a class="nav-link text-danger" href="#">STUDIARE </a>
-
-              <span class="text-danger p-2"> | </span>
-
-              <a class="nav-link text-danger" href="#">RICERCA </a>
-
-              <span class="text-danger p-2"> | </span>
-
-              <a class="nav-link text-danger" href="#">IMPRESA </a>
-
-              <span class="text-danger p-2"> | </span>
-
-              <a class="nav-link text-danger" href="#">SOCIETÀ </a>
-            </div>
-          </nav>
-          <div class="bg-white pt-3">
-            <button
-              class="navbar-toggler border border-0"
-              id="toggle-menu"
-              data-bs-toggle="collapse"
-              data-bs-target="#toggle-menu-display"
-              aria-controls="toggle-menu-display"
-              aria-expanded="false"
-              aria-label="Toggle menu"
-            >
-              <i
-                class="bi bi-list"
-                style="color: rgb(210, 30, 30); font-size: 1.3em"
-              >
-              </i>
-            </button>
           </div>
         </div>
       </div>
@@ -626,507 +636,516 @@
         </ul>
       </div>
 
-      <div
-        id="universityCarousel"
-        class="carousel slide university-content-small-screen"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./images/diritto_allo_studio.jpeg"
-              class="d-block w-100"
-              alt="Diritto allo studio"
-            />
+      <main>
+        <div
+          id="universityCarousel"
+          class="carousel slide university-content-small-screen"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/diritto_allo_studio.jpeg"
+                class="d-block w-100"
+                alt="Diritto allo studio"
+              />
 
-            <div
-              class="text-white bg-secondary d-md-none caption-small-display"
-            >
-              <h4 class="pt-2 ms-1">Diritto allo studio</h4>
-              <p class="ms-1">
-                Da oggi e disponibile la nuova app per mense e punti di ristoro
-              </p>
-              <h5 class="carousel-links bg-danger ps-3 py-2" href="#">
-                Approfondisci
-              </h5>
-            </div>
+              <div
+                class="text-white bg-secondary d-md-none caption-small-display"
+              >
+                <h4 class="pt-2 ms-1">Diritto allo studio</h4>
+                <p class="ms-1">
+                  Da oggi e disponibile la nuova app per mense e punti di
+                  ristoro
+                </p>
+                <h5 class="carousel-links bg-danger ps-3 py-2" href="#">
+                  Approfondisci
+                </h5>
+              </div>
 
-            <div class="carousel-caption d-none d-md-block">
-              <div class="d-flex justify-content-md-between">
-                <div class="bg-secondary p-3" style="text-align: left">
-                  <h4>Diritto allo studio</h4>
+              <div class="carousel-caption d-none d-md-block">
+                <div class="d-flex justify-content-md-between">
+                  <div class="bg-secondary p-3" style="text-align: left">
+                    <h4>Diritto allo studio</h4>
 
-                  <p>
-                    Da oggi e disponibile la nuova app per mense e punti di
-                    ristoro
-                  </p>
+                    <p>
+                      Da oggi e disponibile la nuova app per mense e punti di
+                      ristoro
+                    </p>
+                  </div>
+                  <div
+                    class="align-self-end bg-danger px-3"
+                    style="height: 50%; margin: 0 1em"
+                  >
+                    <h5 class="carousel-links" href="#">Approfondisci</h5>
+                  </div>
                 </div>
-                <div
-                  class="align-self-end bg-danger px-3"
-                  style="height: 50%; margin: 0 1em"
-                >
-                  <h5 class="carousel-links" href="#">Approfondisci</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/neuromi_2025.png"
+                class="d-block w-100"
+                alt="..."
+              />
+
+              <div
+                class="text-white bg-secondary d-md-none caption-small-display"
+              >
+                <h4 class="pt-2 ms-1">
+                  NeuroMI 2025 - Intelligenza Artificiale per le Neuroscienze:
+                  dalla ricerca di base alla pratica clinica
+                </h4>
+                <p class="ms-1">Settimo incontro internazionale</p>
+                <h5 class="carousel-links bg-danger ps-3 py-2" href="#">
+                  Dal 15 al 17 ottobre
+                </h5>
+              </div>
+
+              <div class="carousel-caption d-none d-md-block">
+                <div class="d-flex justify-content-md-between">
+                  <div
+                    class="bg-secondary ps-2 caption-large-display"
+                    style="text-align: left"
+                  >
+                    <h4>
+                      NeuroMI 2025 - Intelligenza Artificiale per le
+                      Neuroscienze: dalla ricerca di base alla pratica clinica
+                    </h4>
+
+                    <p>Settimo incontro internazionale</p>
+                  </div>
+                  <div
+                    class="align-self-end bg-danger px-3"
+                    style="margin: 0 1em"
+                  >
+                    <h5 class="carousel-links" href="#" style="height: 50%">
+                      Dal 15 al 17 ottobre
+                    </h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img
-              src="./images/neuromi_2025.png"
-              class="d-block w-100"
-              alt="..."
-            />
-
-            <div
-              class="text-white bg-secondary d-md-none caption-small-display"
-            >
-              <h4 class="pt-2 ms-1">
-                NeuroMI 2025 - Intelligenza Artificiale per le Neuroscienze:
-                dalla ricerca di base alla pratica clinica
-              </h4>
-              <p class="ms-1">Settimo incontro internazionale</p>
-              <h5 class="carousel-links bg-danger ps-3 py-2" href="#">
-                Dal 15 al 17 ottobre
-              </h5>
-            </div>
-
-            <div class="carousel-caption d-none d-md-block">
-              <div class="d-flex justify-content-md-between">
-                <div
-                  class="bg-secondary ps-2 caption-large-display"
-                  style="text-align: left"
-                >
-                  <h4>
-                    NeuroMI 2025 - Intelligenza Artificiale per le Neuroscienze:
-                    dalla ricerca di base alla pratica clinica
-                  </h4>
-
-                  <p>Settimo incontro internazionale</p>
-                </div>
-                <div
-                  class="align-self-end bg-danger px-3"
-                  style="margin: 0 1em"
-                >
-                  <h5 class="carousel-links" href="#" style="height: 50%">
-                    Dal 15 al 17 ottobre
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#universityCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#universityCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <div
-        class="container-fluid p-3 university-content-small-screen"
-        id="aree-disciplinari"
-        style="background-color: rgb(220, 220, 220)"
-      >
-        <h1 id="aree-disciplinari-title">Aree Disciplinari</h1>
-
-        <div class="row d-flex justify-content-lg-evenly">
-          <div class="col-4 col-lg-1 border-start border-black m-3">
-            <p>
-              <a class="aree-disciplinari-links" href="#"
-                >Economico <br />statistica
-              </a>
-            </p>
-
-            <div
-              class="progress progress-bar bg-warning"
-              style="width: 100%"
-            ></div>
-          </div>
-          <div class="col-4 col-lg-1 border-start border-black m-3">
-            <p><a class="aree-disciplinari-links" href="#">Giuridica</a></p>
-            <br />
-
-            <div
-              class="progress progress progress-bar bg-primary"
-              style="width: 100%"
-            ></div>
-          </div>
-
-          <div class="col-4 col-lg-1 border-start border-black m-3">
-            <p><a class="aree-disciplinari-links" href="#">Scientifica</a></p>
-            <br />
-
-            <div
-              class="progress progress-bar bg-success"
-              style="width: 100%"
-            ></div>
-          </div>
-          <div class="col-4 col-lg-1 border-start border-black m-3">
-            <p><a class="aree-disciplinari-links" href="#">Medica</a></p>
-            <br />
-
-            <div
-              class="progress progress-bar bg-danger"
-              style="width: 100%"
-            ></div>
-          </div>
-          <div class="col-4 col-lg-1 border-start border-black m-3">
-            <p><a class="aree-disciplinari-links" href="#">Sociologica</a></p>
-            <br />
-
-            <div
-              class="progress progress-bar"
-              style="background-color: orange; width: 100%"
-            ></div>
-          </div>
-          <div class="col-4 col-lg-1 border-start border-black m-3">
-            <p>
-              <a class="aree-disciplinari-links" href="#"> Psicologica</a>
-            </p>
-            <br />
-
-            <div
-              class="progress progress-bar"
-              style="background-color: rgba(247, 12, 82, 0.963); width: 100%"
-            ></div>
-          </div>
-          <div class="col-4 col-lg-1 border-start border-black m-3">
-            <p><a class="aree-disciplinari-links" href="#">Pedagogica</a></p>
-            <br />
-
-            <div
-              class="progress progress-bar"
-              style="background-color: rgba(205, 8, 219, 0.555); width: 100%"
-            ></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mt-3 university-content-small-screen">
-        <div class="row">
-          <div
-            class="col-12 col-md-4 mt-3"
-            style="background-color: rgb(245, 245, 245)"
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#universityCarousel"
+            data-bs-slide="prev"
           >
-            <h1 class="text-danger">News</h1>
-            <br />
-            <hr />
-
-            <p>30 Ottobre 2025</p>
-            <p>
-              <a class="text-dark news-links" href="#"
-                ><b>
-                  Diritto allo studio: pubblicata la graduatoria provvisoria per
-                  le borse di studio a.a. 2025/2026
-                </b></a
-              >
-            </p>
-            <p>Consulta lo Sportello online</p>
-            <br />
-            <hr />
-
-            <p>29 Ottobre 2025</p>
-            <p>
-              <a class="text-dark news-links" href="#"
-                ><b>
-                  Diventa tutor TOP, arricchisci il tuo percorso e aiuta un*
-                  tutee a trovare la sua strada</b
-                ></a
-              >
-            </p>
-            <p>Candidati entro il 2 novembre!</p>
-            <hr />
-
-            <p>23 Ottobre 2025</p>
-            <p>
-              <a class="text-dark news-links" href="#"
-                ><b>
-                  Terzo scorrimento della graduatoria alloggi per il
-                  2025/2026</b
-                ></a
-              >
-            </p>
-            <p>Consulta la graduatoria su Sportello online</p>
-            <hr />
-
-            <p>23 Ottobre 2025</p>
-            <p>
-              <a class="text-dark news-links" href="#"
-                ><b>
-                  Borsa di studio SuperNews - Giochi Olimpici Invernali
-                  Milano-Cortina 2026
-                </b></a
-              >
-            </p>
-            <p>
-              Opportunità per gli studenti che presenteranno un progetto sui
-              Giochi Olimpici Invernali Milano-Cortina 2026
-            </p>
-            <hr />
-
-            <p>21 Ottobre 2025</p>
-            <p>
-              <a class="text-dark news-links" href="#"
-                ><b> Richieste di contributo locazione per il 2025 </b></a
-              >
-            </p>
-            <p>
-              Pubblicata la gratuatoria definitiva per il sostegno al pagamento
-              dell'affitto
-            </p>
-            <hr />
-
-            <a href="#" class="btn btn-danger news-links">tutte le news</a>
-          </div>
-
-          <div class="col-12 col-md-8 mt-3">
-            <h1 class="text-danger ms-3">Eventi</h1>
-            <br />
-            <hr class="mx-3" />
-
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div
-                  class="card border border-0 border-bottom no-border-radius py-3 px-2"
-                >
-                  <img
-                    src="./images/eventi/AtleticaMENTE.jpg"
-                    alt="AtleticaMENTE"
-                  />
-                  <div class="card-body">
-                    <p class="card-text time">
-                      da 11 Settembre 2025 a 31 Gennaio 2026
-                    </p>
-                    <p class="card-title">
-                      <a class="eventi-links text-dark" href="#"
-                        ><b
-                          >Mostra fotografica AtleticaMENTE, il racconto della
-                          Dual Career</b
-                        ></a
-                      >
-                    </p>
-                    <p class="card-text">
-                      Allestita nella galleria espositiva dell'edificio Agorà
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div
-                  class="card border border-0 border-bottom no-border-radius py-3 px-2"
-                >
-                  <img
-                    src="./images/eventi/Panorama giuridico europeo.png"
-                    alt="Panorama giuridico europeo"
-                  />
-                  <div class="card-body">
-                    <p class="card-text time">
-                      da 7 Novembre 2025 a 8 Novembre 2025
-                    </p>
-                    <p class="card-title">
-                      <a class="eventi-links text-dark" href="#"
-                        ><b
-                          >Successione necessaria e negozialità successoria nel
-                          panorama giuridico europeo</b
-                        ></a
-                      >
-                    </p>
-                    <p class="card-text">
-                      Convegno incentrato sul diritto successorio italiano ed
-                      europeo, evento in presenza
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br />
-
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div
-                  class="card border border-0 border-bottom no-border-radius py-3 px-2"
-                >
-                  <img
-                    src="./images/eventi/informatica al lavoro.jpg"
-                    alt="Informatica al lavoro"
-                  />
-                  <div class="card-body">
-                    <p class="card-text time">
-                      da 13 Novembre 2025 a 1 Luglio 2026
-                    </p>
-                    <p class="card-title">
-                      <a class="eventi-links text-dark" href="#"
-                        ><b>Informatica al lavoro</b></a
-                      >
-                    </p>
-                    <p class="card-text">
-                      Ciclo di incontri dedicato a studenti e laureati di
-                      informaticas
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div
-                  class="card border border-0 border-bottom no-border-radius py-3 px-2"
-                >
-                  <img
-                    src="./images/eventi/ConferenzaSINe.png"
-                    alt="Conferenza SINe"
-                  />
-                  <div class="card-body">
-                    <p class="card-text time">
-                      da 13 Novembre 2025 a 14 Novembre 2025
-                    </p>
-                    <p class="card-title">
-                      <a class="eventi-links text-dark" href="#"
-                        ><b>Sfide neurotecnologiche: tra etica e diritto</b></a
-                      >
-                    </p>
-                    <p class="card-text">
-                      Conferenza Midterm SINe - Società Italiana di Neuroetica e
-                      Filosofia delle Neuroscienze
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br />
-            <a href="#" class="btn btn-danger eventi-links">tutte gli eventi</a>
-          </div>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#universityCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
 
-      <div
-        class="container-fluid mt-5 py-5 university-content-small-screen"
-        style="background-color: rgb(235, 235, 235)"
-      >
-        <div class="container">
-          <div class="row d-flex align-items-md-center">
-            <div class="col-12 col-md-6">
-              <div class="d-flex">
-                <div class="flex-shrink-0 fs-5">
-                  <i
-                    class="bi bi-book"
-                    id="logo-footer"
-                    style="color: rgb(210, 30, 30)"
-                  ></i>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                  <p>
-                    Università<br />
-                    Piazza dell' Ateneo<br />
-                    E-mail: info@universita.it<br />
-                    P.I. 11111111111
-                  </p>
-                </div>
-              </div>
+        <div
+          class="container-fluid p-3 university-content-small-screen"
+          id="aree-disciplinari"
+          style="background-color: rgb(220, 220, 220)"
+        >
+          <h1 id="aree-disciplinari-title">Aree Disciplinari</h1>
+
+          <div class="row d-flex justify-content-lg-evenly">
+            <div class="col-4 col-lg-1 border-start border-black m-3">
+              <p>
+                <a class="aree-disciplinari-links" href="#"
+                  >Economico <br />statistica
+                </a>
+              </p>
 
               <div
-                class="d-flex flex-wrap"
-                style="font-weight: 600; font-size: smaller"
-              >
-                <div><a href="#" class="footer-links"> Note legali </a></div>
-                <div class="px-2">|</div>
-                <div><a href="#" class="footer-links"> Privacy </a></div>
-                <div class="px-2">|</div>
-                <div>
-                  <a href="#" class="footer-links">
-                    Protezione dei Dati Personali</a
-                  >
-                </div>
-                <div class="px-2">|</div>
-                <div>
-                  <a href="#" class="footer-links">
-                    Amministrazione trasparente</a
-                  >
-                </div>
-                <div class="px-2">|</div>
-                <div>
-                  <a href="#" class="footer-links">
-                    Dichiarazione di accesibilità</a
-                  >
-                </div>
-                <div class="px-2">|</div>
-                <div>
-                  <a href="#" class="footer-links"> Mappa del sito</a>
-                </div>
-                <div class="px-2">|</div>
-                <div>
-                  <a href="#" class="footer-links">
-                    Rivedi le tue scelte sui cookie</a
-                  >
-                </div>
-                <div class="px-2">|</div>
-                <div>
-                  <a href="#" class="footer-links"> Statistiche </a>
-                </div>
-                <div class="px-2">|</div>
-                <div>
-                  <a href="#" class="footer-links"> Privacy e cookie policy </a>
-                </div>
-              </div>
+                class="progress progress-bar bg-warning"
+                style="width: 100%"
+              ></div>
+            </div>
+            <div class="col-4 col-lg-1 border-start border-black m-3">
+              <p><a class="aree-disciplinari-links" href="#">Giuridica</a></p>
+              <br />
+
+              <div
+                class="progress progress progress-bar bg-primary"
+                style="width: 100%"
+              ></div>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-4 col-lg-1 border-start border-black m-3">
+              <p><a class="aree-disciplinari-links" href="#">Scientifica</a></p>
+              <br />
+
               <div
-                class="d-flex justify-content-start justify-content-md-end flex-wrap mt-3"
-                style="font-size: smaller; font-weight: bold"
-              >
-                <div class="pe-2">
-                  <a href="#" class="footer-links text-danger">
-                    DIPARTIMENTI
-                  </a>
-                </div>
-                <div class="pe-2">
-                  <a href="#" class="footer-links text-danger">
-                    COMUNICAZIONE
-                  </a>
-                </div>
-                <div class="pe-2">
-                  <a href="#" class="footer-links text-danger"> BIBLIOTECA</a>
-                </div>
-                <div class="pe-2">
-                  <a href="#" class="footer-links text-danger">DOVE SIAMO </a>
-                </div>
-                <div class="pe-2">
-                  <a href="#" class="footer-links text-danger">
-                    LAVORA CON NOI</a
-                  >
-                </div>
-                <div class="pe-2">
-                  <a href="#" class="footer-links text-danger"> RUBRICA </a>
-                </div>
-                <div class="pe-2">
-                  <a href="#" class="footer-links text-danger"> ENG </a>
-                </div>
-                <div>
-                  <a
-                    href="#"
-                    class="footer-links text-danger"
-                    data-bs-toggle="modal"
-                    data-bs-target="#accediA"
-                    >ACCEDI A...
-                  </a>
-                </div>
-              </div>
+                class="progress progress-bar bg-success"
+                style="width: 100%"
+              ></div>
+            </div>
+            <div class="col-4 col-lg-1 border-start border-black m-3">
+              <p><a class="aree-disciplinari-links" href="#">Medica</a></p>
+              <br />
+
+              <div
+                class="progress progress-bar bg-danger"
+                style="width: 100%"
+              ></div>
+            </div>
+            <div class="col-4 col-lg-1 border-start border-black m-3">
+              <p><a class="aree-disciplinari-links" href="#">Sociologica</a></p>
+              <br />
+
+              <div
+                class="progress progress-bar"
+                style="background-color: orange; width: 100%"
+              ></div>
+            </div>
+            <div class="col-4 col-lg-1 border-start border-black m-3">
+              <p>
+                <a class="aree-disciplinari-links" href="#"> Psicologica</a>
+              </p>
+              <br />
+
+              <div
+                class="progress progress-bar"
+                style="background-color: rgba(247, 12, 82, 0.963); width: 100%"
+              ></div>
+            </div>
+            <div class="col-4 col-lg-1 border-start border-black m-3">
+              <p><a class="aree-disciplinari-links" href="#">Pedagogica</a></p>
+              <br />
+
+              <div
+                class="progress progress-bar"
+                style="background-color: rgba(205, 8, 219, 0.555); width: 100%"
+              ></div>
             </div>
           </div>
         </div>
-      </div>
+
+        <div class="container mt-3 university-content-small-screen">
+          <div class="row">
+            <div
+              class="col-12 col-md-4 mt-3"
+              style="background-color: rgb(245, 245, 245)"
+            >
+              <h1 class="text-danger">News</h1>
+              <br />
+              <hr />
+
+              <p>30 Ottobre 2025</p>
+              <p>
+                <a class="text-dark news-links" href="#"
+                  ><b>
+                    Diritto allo studio: pubblicata la graduatoria provvisoria
+                    per le borse di studio a.a. 2025/2026
+                  </b></a
+                >
+              </p>
+              <p>Consulta lo Sportello online</p>
+              <br />
+              <hr />
+
+              <p>29 Ottobre 2025</p>
+              <p>
+                <a class="text-dark news-links" href="#"
+                  ><b>
+                    Diventa tutor TOP, arricchisci il tuo percorso e aiuta un*
+                    tutee a trovare la sua strada</b
+                  ></a
+                >
+              </p>
+              <p>Candidati entro il 2 novembre!</p>
+              <hr />
+
+              <p>23 Ottobre 2025</p>
+              <p>
+                <a class="text-dark news-links" href="#"
+                  ><b>
+                    Terzo scorrimento della graduatoria alloggi per il
+                    2025/2026</b
+                  ></a
+                >
+              </p>
+              <p>Consulta la graduatoria su Sportello online</p>
+              <hr />
+
+              <p>23 Ottobre 2025</p>
+              <p>
+                <a class="text-dark news-links" href="#"
+                  ><b>
+                    Borsa di studio SuperNews - Giochi Olimpici Invernali
+                    Milano-Cortina 2026
+                  </b></a
+                >
+              </p>
+              <p>
+                Opportunità per gli studenti che presenteranno un progetto sui
+                Giochi Olimpici Invernali Milano-Cortina 2026
+              </p>
+              <hr />
+
+              <p>21 Ottobre 2025</p>
+              <p>
+                <a class="text-dark news-links" href="#"
+                  ><b> Richieste di contributo locazione per il 2025 </b></a
+                >
+              </p>
+              <p>
+                Pubblicata la gratuatoria definitiva per il sostegno al
+                pagamento dell'affitto
+              </p>
+              <hr />
+
+              <a href="#" class="btn btn-danger news-links">tutte le news</a>
+            </div>
+
+            <div class="col-12 col-md-8 mt-3">
+              <h1 class="text-danger ms-3">Eventi</h1>
+              <br />
+              <hr class="mx-3" />
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card border border-0 border-bottom no-border-radius py-3 px-2"
+                  >
+                    <img
+                      src="./images/eventi/AtleticaMENTE.jpg"
+                      alt="AtleticaMENTE"
+                    />
+                    <div class="card-body">
+                      <p class="card-text time">
+                        da 11 Settembre 2025 a 31 Gennaio 2026
+                      </p>
+                      <p class="card-title">
+                        <a class="eventi-links text-dark" href="#"
+                          ><b
+                            >Mostra fotografica AtleticaMENTE, il racconto della
+                            Dual Career</b
+                          ></a
+                        >
+                      </p>
+                      <p class="card-text">
+                        Allestita nella galleria espositiva dell'edificio Agorà
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card border border-0 border-bottom no-border-radius py-3 px-2"
+                  >
+                    <img
+                      src="./images/eventi/Panorama giuridico europeo.png"
+                      alt="Panorama giuridico europeo"
+                    />
+                    <div class="card-body">
+                      <p class="card-text time">
+                        da 7 Novembre 2025 a 8 Novembre 2025
+                      </p>
+                      <p class="card-title">
+                        <a class="eventi-links text-dark" href="#"
+                          ><b
+                            >Successione necessaria e negozialità successoria
+                            nel panorama giuridico europeo</b
+                          ></a
+                        >
+                      </p>
+                      <p class="card-text">
+                        Convegno incentrato sul diritto successorio italiano ed
+                        europeo, evento in presenza
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card border border-0 border-bottom no-border-radius py-3 px-2"
+                  >
+                    <img
+                      src="./images/eventi/informatica al lavoro.jpg"
+                      alt="Informatica al lavoro"
+                    />
+                    <div class="card-body">
+                      <p class="card-text time">
+                        da 13 Novembre 2025 a 1 Luglio 2026
+                      </p>
+                      <p class="card-title">
+                        <a class="eventi-links text-dark" href="#"
+                          ><b>Informatica al lavoro</b></a
+                        >
+                      </p>
+                      <p class="card-text">
+                        Ciclo di incontri dedicato a studenti e laureati di
+                        informaticas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card border border-0 border-bottom no-border-radius py-3 px-2"
+                  >
+                    <img
+                      src="./images/eventi/ConferenzaSINe.png"
+                      alt="Conferenza SINe"
+                    />
+                    <div class="card-body">
+                      <p class="card-text time">
+                        da 13 Novembre 2025 a 14 Novembre 2025
+                      </p>
+                      <p class="card-title">
+                        <a class="eventi-links text-dark" href="#"
+                          ><b
+                            >Sfide neurotecnologiche: tra etica e diritto</b
+                          ></a
+                        >
+                      </p>
+                      <p class="card-text">
+                        Conferenza Midterm SINe - Società Italiana di Neuroetica
+                        e Filosofia delle Neuroscienze
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <a href="#" class="btn btn-danger eventi-links"
+                >tutte gli eventi</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container-fluid mt-5 py-5 university-content-small-screen"
+          style="background-color: rgb(235, 235, 235)"
+        >
+          <div class="container">
+            <div class="row d-flex align-items-md-center">
+              <div class="col-12 col-md-6">
+                <div class="d-flex">
+                  <div class="flex-shrink-0 fs-5">
+                    <i
+                      class="bi bi-book"
+                      id="logo-footer"
+                      style="color: rgb(210, 30, 30)"
+                    ></i>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <p>
+                      Università<br />
+                      Piazza dell' Ateneo<br />
+                      E-mail: info@universita.it<br />
+                      P.I. 11111111111
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex flex-wrap"
+                  style="font-weight: 600; font-size: smaller"
+                >
+                  <div><a href="#" class="footer-links"> Note legali </a></div>
+                  <div class="px-2">|</div>
+                  <div><a href="#" class="footer-links"> Privacy </a></div>
+                  <div class="px-2">|</div>
+                  <div>
+                    <a href="#" class="footer-links">
+                      Protezione dei Dati Personali</a
+                    >
+                  </div>
+                  <div class="px-2">|</div>
+                  <div>
+                    <a href="#" class="footer-links">
+                      Amministrazione trasparente</a
+                    >
+                  </div>
+                  <div class="px-2">|</div>
+                  <div>
+                    <a href="#" class="footer-links">
+                      Dichiarazione di accesibilità</a
+                    >
+                  </div>
+                  <div class="px-2">|</div>
+                  <div>
+                    <a href="#" class="footer-links"> Mappa del sito</a>
+                  </div>
+                  <div class="px-2">|</div>
+                  <div>
+                    <a href="#" class="footer-links">
+                      Rivedi le tue scelte sui cookie</a
+                    >
+                  </div>
+                  <div class="px-2">|</div>
+                  <div>
+                    <a href="#" class="footer-links"> Statistiche </a>
+                  </div>
+                  <div class="px-2">|</div>
+                  <div>
+                    <a href="#" class="footer-links">
+                      Privacy e cookie policy
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div
+                  class="d-flex justify-content-start justify-content-md-end flex-wrap mt-3"
+                  style="font-size: smaller; font-weight: bold"
+                >
+                  <div class="pe-2">
+                    <a href="#" class="footer-links text-danger">
+                      DIPARTIMENTI
+                    </a>
+                  </div>
+                  <div class="pe-2">
+                    <a href="#" class="footer-links text-danger">
+                      COMUNICAZIONE
+                    </a>
+                  </div>
+                  <div class="pe-2">
+                    <a href="#" class="footer-links text-danger"> BIBLIOTECA</a>
+                  </div>
+                  <div class="pe-2">
+                    <a href="#" class="footer-links text-danger">DOVE SIAMO </a>
+                  </div>
+                  <div class="pe-2">
+                    <a href="#" class="footer-links text-danger">
+                      LAVORA CON NOI</a
+                    >
+                  </div>
+                  <div class="pe-2">
+                    <a href="#" class="footer-links text-danger"> RUBRICA </a>
+                  </div>
+                  <div class="pe-2">
+                    <a href="#" class="footer-links text-danger"> ENG </a>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="footer-links text-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#accediA"
+                      >ACCEDI A...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <script src="./index.js"></script>
     <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
