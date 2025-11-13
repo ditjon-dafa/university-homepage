@@ -28,26 +28,30 @@ function showHideMenuContent() {
   );
 }
 
+//
+
 //function to update Window Size (width)
 function updateSize() {
   currentWindowWidth = window.innerWidth;
 
-  const UNIVERSITY_CONTENT_SMALL_SCREEN = document.querySelectorAll(
-    ".university-content-small-screen"
-  );
+  const SMALL_SCREEN_MAIN_CONTENT =
+    document.getElementById("small-screen-main");
 
   //hide page general content when menu content is shown in small screen
   if (currentWindowWidth <= 767) {
-    UNIVERSITY_CONTENT_SMALL_SCREEN.forEach((content) => {
-      content.classList.toggle("hide", isShownMenuContent === true);
-    });
+    SMALL_SCREEN_MAIN_CONTENT.classList.toggle(
+      "hide",
+      isShownMenuContent === true
+    );
   }
   //or show menu content overlaying page content in medium and large screen
   else {
-    UNIVERSITY_CONTENT_SMALL_SCREEN.forEach((content) => {
-      if (isShownMenuContent === true && content.classList.contains("hide"))
-        content.classList.remove("hide");
-    });
+    if (
+      isShownMenuContent === true &&
+      SMALL_SCREEN_MAIN_CONTENT.classList.contains("hide")
+    ) {
+      SMALL_SCREEN_MAIN_CONTENT.classList.remove("hide");
+    }
   }
   //hide large screen menu content when browser maximize button is clicked
   //then show second nav bar

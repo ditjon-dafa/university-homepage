@@ -16,7 +16,7 @@
     <link href="./index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container-fluid" id="body-content">
+    <div class="container-fluid">
       <header>
         <nav class="navbar navbar-expand-xxl">
           <div class="container-fluid d-flex justify-content-end">
@@ -61,7 +61,7 @@
 
             <button
               type="button"
-              class="btn btn-danger no-border-radius p-4 header-small-screen"
+              class="btn btn-danger no-border-radius p-4"
               data-bs-toggle="modal"
               data-bs-target="#accediA"
               id="navbar-modal-button"
@@ -72,22 +72,14 @@
         </nav>
 
         <div class="container-fluid d-flex justify-content-between fs-5">
-          <div class="me-1 pt-1 header-small-screen">
+          <div class="me-1 pt-1">
             <i class="bi bi-book" id="logo" style="color: rgb(210, 30, 30)"></i>
           </div>
           <div class="d-flex justify-content-end">
             <div id="second-nav-bar-md">
               <form class="d-flex pt-3" role="search">
-                <input
-                  class="form-control me-1 header-small-screen"
-                  type="search"
-                />
-                <button
-                  class="btn btn-danger me-1 header-small-screen"
-                  type="submit"
-                >
-                  Cerca
-                </button>
+                <input class="form-control me-1" type="search" />
+                <button class="btn btn-danger me-1" type="submit">Cerca</button>
               </form>
             </div>
             <nav class="navbar navbar-expand-xxl">
@@ -111,7 +103,7 @@
                 <a class="nav-link text-danger" href="#">SOCIETÀ </a>
               </div>
             </nav>
-            <div class="bg-white pt-3 header-small-screen">
+            <div class="bg-white pt-3">
               <button
                 class="navbar-toggler border border-0"
                 id="toggle-menu"
@@ -635,11 +627,10 @@
           </li>
         </ul>
       </div>
-
-      <main>
+      <div id="small-screen-main">
         <div
           id="universityCarousel"
-          class="carousel slide university-content-small-screen"
+          class="carousel slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
@@ -748,7 +739,7 @@
         </div>
 
         <div
-          class="container-fluid p-3 university-content-small-screen"
+          class="container-fluid p-3"
           id="aree-disciplinari"
           style="background-color: rgb(220, 220, 220)"
         >
@@ -778,7 +769,9 @@
             </div>
 
             <div class="col-4 col-lg-1 border-start border-black m-3">
-              <p><a class="aree-disciplinari-links" href="#">Scientifica</a></p>
+              <p>
+                <a class="aree-disciplinari-links" href="#">Scientifica</a>
+              </p>
               <br />
 
               <div
@@ -796,7 +789,9 @@
               ></div>
             </div>
             <div class="col-4 col-lg-1 border-start border-black m-3">
-              <p><a class="aree-disciplinari-links" href="#">Sociologica</a></p>
+              <p>
+                <a class="aree-disciplinari-links" href="#">Sociologica</a>
+              </p>
               <br />
 
               <div
@@ -816,7 +811,9 @@
               ></div>
             </div>
             <div class="col-4 col-lg-1 border-start border-black m-3">
-              <p><a class="aree-disciplinari-links" href="#">Pedagogica</a></p>
+              <p>
+                <a class="aree-disciplinari-links" href="#">Pedagogica</a>
+              </p>
               <br />
 
               <div
@@ -827,7 +824,7 @@
           </div>
         </div>
 
-        <div class="container mt-3 university-content-small-screen">
+        <div class="container mt-3">
           <div class="row">
             <div
               class="col-12 col-md-4 mt-3"
@@ -1027,7 +1024,7 @@
         </div>
 
         <div
-          class="container-fluid mt-5 py-5 university-content-small-screen"
+          class="container-fluid mt-5 py-5"
           style="background-color: rgb(235, 235, 235)"
         >
           <div class="container">
@@ -1055,7 +1052,9 @@
                   class="d-flex flex-wrap"
                   style="font-weight: 600; font-size: smaller"
                 >
-                  <div><a href="#" class="footer-links"> Note legali </a></div>
+                  <div>
+                    <a href="#" class="footer-links"> Note legali </a>
+                  </div>
                   <div class="px-2">|</div>
                   <div><a href="#" class="footer-links"> Privacy </a></div>
                   <div class="px-2">|</div>
@@ -1145,7 +1144,7 @@
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
     <script src="./index.js"></script>
     <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>

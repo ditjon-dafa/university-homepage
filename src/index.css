@@ -115,7 +115,7 @@
 
 @media screen and (max-width: 767px) {
   .carousel-item {
-    height: 52vh;
+    height: 46vh;
   }
   .caption-small-display {
     margin: 0 10vw;
@@ -123,21 +123,10 @@
 }
 @media screen and (max-width: 576px) {
   .carousel-item {
-    height: 46vh;
+    height: 40vh;
   }
   .caption-small-display {
     margin: 0 0;
-  }
-}
-@media screen and (max-width: 420px) {
-  .carousel-item {
-    height: 42vh;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .carousel-item {
-    height: 44vh;
   }
 }
 
