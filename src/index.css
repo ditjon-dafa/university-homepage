@@ -145,7 +145,7 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1199px) {
   #first-nav-bar,
   #second-nav-bar-lg {
     display: none;
@@ -156,8 +156,8 @@
   }
 }
 
-/* menu display xxl */
-@media screen and (min-width: 1400px) {
+/* menu display xl */
+@media screen and (min-width: 1200px) {
   #menu-medium-display,
   #menu-small-display,
   #second-nav-bar-md {
@@ -176,7 +176,7 @@
 }
 
 /*menu display md */
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1199px) {
   #menu-small-display,
   #menu-large-display {
     display: none;
